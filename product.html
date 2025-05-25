@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Details | Marketino</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./icon/ICON.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <div class="loader-lod">
+    <div class="loader"></div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <a href="#">Marketino</a>
+        </div>
+        <nav class="d-flex gap-15">
+          <a href="./index.html">Home</a>
+          <a href="./categories.html">Categories</a>
+          <a href="./products.html">Products</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+   <h1 class="product-title"></h1>
+  <main class="container-main">
+    <div class="row-main">
+   
+    <div class="product-details">
+      <img class="product-image" alt="Product Image">
+      <div class="product-info">
+        <p><strong>Brand:</strong> <span class="product-brand"></span></p>
+
+        <p><strong>Category:</strong> <span class="product-category"></span></p>
+
+        <p><strong>Description:</strong></p>
+
+        <p class="product-description"></p>
+
+        <p><strong>Price:</strong> $<span class="product-price"></span></p>
+
+        <p><strong>Rating:</strong> <span class="product-rating"></span>/5</p>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>
