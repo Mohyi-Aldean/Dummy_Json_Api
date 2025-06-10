@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Marketino</title>
+    <title>Marketino</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./icon/ICON.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
+
 <body>
 
-     <div class="loader-lod">
-   <div class="loader"></div> 
-   </div>
+    <div class="loader-lod">
+        <div class="loader"></div>
+    </div>
 
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="logo">
-                    <a href="#">Marketino</a>
+                    <a href="./index.html">Marketino</a>
                 </div>
                 <nav class="d-flex gap-15">
                     <a href="./index.html">Home</a>
                     <a href="./categories.html">Categories</a>
-                    <a href="./products.html">Products</a>
+                    <a href="./products.html?page=1">Products</a>
                 </nav>
             </div>
         </div>
@@ -31,11 +37,23 @@
 
     <h1>Products</h1>
 
- <div class="product-container">
-  
-</div>
-    
-   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <section class="products">
+        <div class="product-container"></div>
+
+        <ul class="pagination-list">
+        </ul>
+    </section>
+    <div class="my-modal">
+        <div class="img">
+            <i class="fa-solid fa-circle-xmark close-btn" style="color: #000000;"></i>
+            <i class="fa-solid fa-arrow-left left-btn" style="color: #000000;"></i>
+            <img src="" class="modal-img">
+            <i class="fa-solid fa-arrow-right right-btn" style="color: #000000;"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./products.js"></script>
 </body>
+
 </html>
