@@ -112,3 +112,15 @@ function customModal() {
     }
   }
 }
+
+
+window.onscroll = () => {
+  const header = document.querySelector(".header");
+  const productsSection = document.querySelector(".products");
+  if (window.scrollY > productsSection.offsetTop ) {
+    header.classList.add("on-scroll");
+  }else {
+    header.classList.remove("on-scroll");
+  }
+}
+
